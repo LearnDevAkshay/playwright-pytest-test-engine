@@ -1,0 +1,4 @@
+test_cases,Item,FirstName,LastName,PostalCode
+test_case_user_login,data1,data2,data3,data4
+test_add_bag_pack_to_cart,Sauce Labs Backpack,data2,data3,data4
+test_add_bike_light_to_cart,Sauce Labs Bike Light,data2,data3,data4

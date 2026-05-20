@@ -1,0 +1,22 @@
+{
+  "environment": "qa",
+  "browser": "chrome",
+  "logging": "false",
+  "headless_mode": "false",
+
+  "qa": {
+    "url": "https://www.saucedemo.com/",
+    "email": "standard_user",
+    "password": "secret_sauce"
+  },
+  "stage": {
+    "url": "https://www.saucedemo.com/",
+    "email": "standard_user",
+    "password": "secret_sauce"
+  },
+  "prod": {
+    "url": "https://www.saucedemo.com/",
+    "email": "standard_user",
+    "password": "secret_sauce"
+  }
+}
