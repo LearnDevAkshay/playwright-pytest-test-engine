@@ -1,3 +1,5 @@
+from playwright.sync_api import Playwright
+
 print("NEW PLAYWRIGHT CONFTEST LOADED")
 import os
 
@@ -36,6 +38,20 @@ def page_instance(page):
 
 
 
+@pytest.fixture()
+def api_request(playwright: Playwright):
 
+    request_context = playwright.request.new_context(
+        extra_http_headers={
+
+        "Content-Type": "application/json",
+        "Accept": "application/json"
+
+        }
+    )
+
+    yield request_context
+
+    request_context.dispose()
 
 
